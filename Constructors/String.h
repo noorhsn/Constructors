@@ -18,9 +18,11 @@ public:
 	//Copy Assignment Operator
 	String& operator=(String& S) noexcept;
 	//Move Constructor
-	String(String&& S);
+	String(String&& S)noexcept;
 	//Move Assignment Operator
 	String& operator=(String&& S) noexcept;
 	//Concatenation Operator
-	String& operator+(const String S1) noexcept;
+	//String& operator+(const String S1) noexcept;
+    char* GetString();
+	void SetString(const char* newString);
 };
